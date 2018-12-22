@@ -25,15 +25,13 @@
 </template>
 
 <script>
-
-export default {
-  transition: 'fadeOpacity',
-  async asyncData({ app, params, error }) {
-    console.log(app)
-    let profile = await app.$axios.$get('https://tender-wescoff-5cd4a9.netlify.com/userProfile.json')
-    return { profile }
+  export default {
+    transition: 'fadeOpacity',
+    async asyncData({ app, params, error }) {
+      let profile = await app.$axios.$get('https://tender-wescoff-5cd4a9.netlify.com/userProfile.json')
+      return { profile }
+    }
   }
-}
 </script>
 
 <style>

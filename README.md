@@ -1,6 +1,15 @@
-# fitness
+# fitness App
 
-> My slick Nuxt.js project
+## Why
+I exported a week of fitbit data, and it seemed like a good opportunity to play around with CSS and transitions, which I've been meaning to explore.  I might clean up and/or fudge the data to make it more fun to display.  No javascripts were harmed in the making of this project - aside from collecting the data, it's 100% organic CSS.
+
+## CSS Page Transitions
+* default slide
+* page specific fader in/out
+
+## CSS Element transitions
+* TODO
+
 
 ## Build Setup
 

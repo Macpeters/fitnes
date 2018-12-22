@@ -1,32 +1,14 @@
 {
-    "encodedId": "6ZZC69",
     "displayName": "Mac P.",
     "gender": "FEMALE",
     "dateOfBirth": "1982-02-22",
     "age": 36,
-    "height": 175.20000000000002,
-    "weight": 0,
+    "height": 175.2,
     "strideLengthWalking": 72.4,
     "strideLengthRunning": 94.4,
-    "fullName": "Mac Peters",
-    "firstName": "Mac",
-    "lastName": "Peters",
-    "displayNameSetting": "name",
     "country": "CA",
-    "memberSince": [
-        2018,
-        12,
-        3
-    ],
     "timezone": "America/Toronto",
     "offsetFromUTCMillis": -18000000,
-    "locale": "en_GB",
-    "weightUnit": "en_US",
-    "distanceUnit": "METRIC",
-    "heightUnit": "METRIC",
-    "glucoseUnit": "en_US",
-    "swimUnit": "en_US",
-    "startDayOfWeek": "SUNDAY",
     "topBadges": [
         {
             "encodedId": "228TPP",
@@ -77,10 +59,5 @@
             "badgeGradientStartColor": "2DB4D7",
             "badgeGradientEndColor": "38D7FF"
         }
-    ],
-    "averageDailySteps": 13342,
-    "strideLengthWalkingType": "default",
-    "strideLengthRunningType": "default",
-    "clockTimeDisplayFormat": "TWENTY_FOUR_HOUR",
-    "child": false
+    ]
 }
