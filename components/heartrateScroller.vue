@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <h2>Draw the graph using an svg image</h2>
     <div class="heartrates">
       <ul>
         <li class="item" v-for="(item, index) in day" :key="index">
@@ -46,7 +47,6 @@
   }
 
   img {
-    /* margin-left: -100px; */
     opacity: 0.5;
   }
 

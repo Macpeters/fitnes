@@ -4,14 +4,14 @@
       <h1 class="title">
         Heart Rate
       </h1>
-      <heartrates :day="Dec03"/>
-
+      <heartrateScroller :day="sliced"/>
+      <heartrate2 :day="sliced"/>
     
 
       <hr/>
       <h5 class="subtitle">
         <ul>
-          <li v-for="(item, index) in Dec03" :key="index">
+          <li v-for="(item, index) in sliced" :key="index">
             {{item}}
           </li>
         </ul>
@@ -21,14 +21,18 @@
 </template>
 
 <script>
-  import heartrates from '~/components/heartrates.vue'
+  import heartrateScroller from '~/components/heartrateScroller.vue'
+  import heartrate2 from '~/components/heartrate2.vue'
   export default {
     components: {
-      heartrates: heartrates
+      heartrateScroller: heartrateScroller,
+      heartrate2: heartrate2
     },
     async asyncData({ app, params, error }) {
       let Dec03 = await app.$axios.$get('https://tender-wescoff-5cd4a9.netlify.com/heart_rate-2018-12-03.json')
-      return { Dec03 }
+    //  we're just messing around with the first bit of data
+     let sliced = Dec03.slice(0, 200);
+      return { sliced }
     }
   }
 </script>
