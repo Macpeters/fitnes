@@ -11,6 +11,7 @@
     "offsetFromUTCMillis": -18000000,
     "topBadges": [
         {
+            "id": "daily_steps",
             "encodedId": "228TPP",
             "badgeType": "DAILY_STEPS",
             "value": 20000,
@@ -35,6 +36,7 @@
             "badgeGradientEndColor": "A489E8"
         },
         {
+            "id": "lifetime_distance",
             "encodedId": "22B8LN",
             "badgeType": "LIFETIME_DISTANCE",
             "value": 42,

@@ -19,10 +19,12 @@
         </li>
       </div>
 
-      <div class="badge-details">
+      <div class="badge-details" v-bind:id=chosenBadge.id>
         <h1>{{chosenBadge.shortName}}</h1>
         <h2>{{chosenBadge.description}}</h2>
         <h3>{{chosenBadge.mobileDescription}}</h3>
+        <h1>{{chosenBadge.id}}</h1>
+        {{chosenBadge}}
         <img v-bind:src="chosenBadge.image300px">
       </div>
 
@@ -51,12 +53,16 @@
 </script>
 
 <style>
+  /* page transitions */
   .fadeOpacity-enter-active, .fadeOpacity-leave-active {
     transition: opacity .35s ease-out;
   }
-
   .fadeOpacity-enter, .fadeOpacity-leave-active {
     opacity: 0;
+  }
+
+  #daily_steps {
+    background-color: red;
   }
 
   body {
@@ -75,7 +81,6 @@
 
   li {
     list-style: none;
-
   }
 
   .list-badge {
