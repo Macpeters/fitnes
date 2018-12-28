@@ -23,8 +23,6 @@
         <h1>{{chosenBadge.shortName}}</h1>
         <h2>{{chosenBadge.description}}</h2>
         <h3>{{chosenBadge.mobileDescription}}</h3>
-        <h1>{{chosenBadge.id}}</h1>
-        {{chosenBadge}}
         <img v-bind:src="chosenBadge.image300px">
       </div>
 
@@ -62,12 +60,11 @@
   }
 
   #daily_steps {
-    background-color: red;
+    background-color: #A489E8;
     transition:all 3s ease;
   }
-
   #lifetime_distance {
-    background-color: purple;
+    background-color: #38D7FF;
     transition:all 3s ease;
   }
 
