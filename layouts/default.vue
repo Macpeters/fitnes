@@ -66,4 +66,19 @@
       transform: translate3d(100%, 0, 0);
     }
   }
+
+  .info:before {
+    content: "";
+    display: block;
+    background: url("~assets/construction.png") no-repeat;
+    width: 60px; 
+    height: 60px; 
+    float: left;
+    margin: 0 6px 0 0;
+  }
+  .info {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    padding: 20px;
+  }
 </style>

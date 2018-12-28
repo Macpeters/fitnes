@@ -1,8 +1,8 @@
 {
     "displayName": "Mac P.",
     "gender": "FEMALE",
-    "dateOfBirth": "1982-02-22",
-    "age": 36,
+    "dateOfBirth": "1832-02-22",
+    "age": 666,
     "height": 175.2,
     "strideLengthWalking": 72.4,
     "strideLengthRunning": 94.4,
@@ -12,7 +12,6 @@
     "topBadges": [
         {
             "id": "daily_steps",
-            "encodedId": "228TPP",
             "badgeType": "DAILY_STEPS",
             "value": 20000,
             "timesAchieved": 1,
@@ -37,7 +36,6 @@
         },
         {
             "id": "lifetime_distance",
-            "encodedId": "22B8LN",
             "badgeType": "LIFETIME_DISTANCE",
             "value": 42,
             "unit": "KILOMETERS",

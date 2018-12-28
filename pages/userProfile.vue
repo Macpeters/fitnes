@@ -9,16 +9,17 @@
         <div>DOB: {{profile.dateOfBirth}}</div>
       </div>
 
-      <div>
-        This page uses its own page transition - a fade in.  
-        The badges listed have a transitional hover effect, and clicking the badge will show a transitional background
-        color, as defined by the json data.
+      <div class="info">
+        <p>This page uses its own page transition - a fade in.</p>
+        <p>The badges listed have a transitional hover effect.</p>
+        <p>Clicking the badge will show a transitional background
+          color, as defined by the json data.</p>
       </div>
 
       <div class="badges">
         <li class='list-badge' v-for="(badge, index) in profile.topBadges" :key="index">
           <div @click='choose(badge)'>
-            <h3>{{badge.badgeType}}</h3>
+            <h3>{{badge.category}}</h3>
             <img v-bind:src="badge.image50px">
             <div>{{badge.shortDescription}}</div>
           </div>

@@ -8,7 +8,7 @@
         For playing with CSS
       </h2>
 
-      <div>The default page transition is a slide - this and the heartrate page use the default transition.</div>
+      <div class="info">The default page transition is a slide - this and the heartrate page use the default transition.</div>
     </div>
   </section>
 </template>
@@ -48,5 +48,4 @@ export default {
   word-spacing: 5px;
   padding-bottom: 15px;
 }
-
 </style>
