@@ -7,6 +7,8 @@
       <h2 class="subtitle">
         For playing with CSS
       </h2>
+
+      <div>The default page transition is a slide - this and the heartrate page use the default transition.</div>
     </div>
   </section>
 </template>

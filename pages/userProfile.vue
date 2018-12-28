@@ -9,6 +9,12 @@
         <div>DOB: {{profile.dateOfBirth}}</div>
       </div>
 
+      <div>
+        This page uses its own page transition - a fade in.  
+        The badges listed have a transitional hover effect, and clicking the badge will show a transitional background
+        color, as defined by the json data.
+      </div>
+
       <div class="badges">
         <li class='list-badge' v-for="(badge, index) in profile.topBadges" :key="index">
           <div @click='choose(badge)'>
@@ -19,7 +25,7 @@
         </li>
       </div>
 
-      <div class="badge-details" v-bind:id=chosenBadge.id>
+      <div class="badge-details" v-bind:style="{ 'background-color': '#' + chosenBadge.badgeGradientEndColor }" >
         <h1>{{chosenBadge.shortName}}</h1>
         <h2>{{chosenBadge.description}}</h2>
         <h3>{{chosenBadge.mobileDescription}}</h3>
@@ -59,15 +65,6 @@
     opacity: 0;
   }
 
-  #daily_steps {
-    background-color: #A489E8;
-    transition:all 3s ease;
-  }
-  #lifetime_distance {
-    background-color: #38D7FF;
-    transition:all 3s ease;
-  }
-
   body {
     width: 80%;
     margin-left: 10%;
@@ -102,5 +99,6 @@
 
   .badge-details {
     text-align: center;
+    transition:all 3s ease;
   }
 </style>
