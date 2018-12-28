@@ -63,6 +63,12 @@
 
   #daily_steps {
     background-color: red;
+    transition:all 3s ease;
+  }
+
+  #lifetime_distance {
+    background-color: purple;
+    transition:all 3s ease;
   }
 
   body {
