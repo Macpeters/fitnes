@@ -9,7 +9,7 @@
           </span>
           <span class="foo">*</span>
         </li>
-      </ul>   
+      </ul>
     </div>
   </section>
 </template>
@@ -26,6 +26,7 @@
   .heartrates {
     overflow: hidden;
     height: 150px;
+    background-color: black;
   }
 
   ul {
@@ -50,7 +51,7 @@
     opacity: 0.5;
   }
 
- 
+
   .bar {
     position: relative;
     width: 10px;

@@ -4,9 +4,9 @@
     <div class="heartrates">
       <ul>
         <li class="item" v-for="(item, index) in day" :key="index">
-          <div class="value" v-bind:style="{ height: 150 - item.value.bpm + 'px;' }" >{{item.value.bpm}}</div>
+          <div class="value" v-bind:style="{ height: 150 - item.value.bpm + 'px;' }" ><span class="item-value">{{item.value.bpm}}</span></div>
         </li>
-      </ul>   
+      </ul>
     </div>
   </section>
 </template>
@@ -35,20 +35,28 @@ ul {
 
 .item {
   height: 150px;
-  background-color: red;
+  background-color: rgb(212, 102, 102);
   width: 10px;
   display: inline-block;
   margin: 2px;
-  opacity: 0.5;
+  /* opacity: 0; */
   z-index: 1;
 }
 
 .item:hover {
   width: 25px;
-  opacity: 1;
+  /* opacity: 1; */
   color: white;
+  background-color: red;
   font-weight: 800;
   z-index: 300;
+}
+
+.item-value {
+  /* opacity: 0; */
+}
+.item-value:hover {
+  color: white;
 }
 
 .value {

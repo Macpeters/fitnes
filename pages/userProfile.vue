@@ -10,14 +10,20 @@
       </div>
 
       <div class="badges">
-        <li v-for="(badge, index) in profile.topBadges" :key="index">
-          <div>
+        <li class='list-badge' v-for="(badge, index) in profile.topBadges" :key="index">
+          <div @click='choose(badge)'>
             <h3>{{badge.badgeType}}</h3>
             <img v-bind:src="badge.image50px">
             <div>{{badge.shortDescription}}</div>
-            {{badge}}
           </div>
         </li>
+      </div>
+
+      <div class="badge-details">
+        <h1>{{chosenBadge.shortName}}</h1>
+        <h2>{{chosenBadge.description}}</h2>
+        <h3>{{chosenBadge.mobileDescription}}</h3>
+        <img v-bind:src="chosenBadge.image300px">
       </div>
 
     </div>
@@ -30,7 +36,17 @@
     async asyncData({ app, params, error }) {
       let profile = await app.$axios.$get('https://tender-wescoff-5cd4a9.netlify.com/userProfile.json')
       return { profile }
+    },
+    data() {
+    return {
+      chosenBadge: { }
+    };
+    },
+    methods: {
+    choose(badge) {
+      this.chosenBadge = badge;
     }
+  },
   }
 </script>
 
@@ -43,16 +59,40 @@
     opacity: 0;
   }
 
+  body {
+    width: 80%;
+    margin-left: 10%;
+  }
+
   .basic-info {
     font-size: 16px;
     font-weight: 500;
     background-color: bisque;
     text-align: center;
+    margin-top: 10px;
+    border: medium solid lightgrey;
   }
 
   li {
     list-style: none;
+
+  }
+
+  .list-badge {
+    width: 200px;
+    background: white;
+    -webkit-transition: background-color 2s; /* Safari */
+    transition: background-color 2s;
+    transition-duration: 2s;
     display: inline-block;
-    padding: 20px;
+    margin: 20px;
+    cursor: grab;
+  }
+  .list-badge:hover {
+    background-color: rgb(248, 205, 153);
+  }
+
+  .badge-details {
+    text-align: center;
   }
 </style>
